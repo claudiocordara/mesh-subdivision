@@ -18,6 +18,11 @@ public:
 	vector<Vertex*> verts;
 
 	void loadOff(const char* path, bool quadToTri);
+	int saveSTL(std::string _fileName, std::string _header, bool _binaryFormat) const;
+	int saveSTL(std::ofstream& _file, std::string _header, bool _binaryFormat) const;
+	int loadSTL(std::string _fileName, bool _flipXY, bool _flipYZ, bool _flipXZ);
+	std::string getNextToken(std::ifstream& _file, bool &_endLineFlag);
+
 
 	void addFace(size_t* vertices, size_t sideCount);
 	void addVertex(const Point& p);
