@@ -1,0 +1,16 @@
+MeshSubdivision/.vs/*
+MeshSubdivision/Debug/*
+MeshSubdivision/Release/*
+MeshSubdivision/x64/*
+Win32/*
+
+
+
+*.filters
+*.bak*
+*.user
+*.lck
+*.vbak*
+*.stl
+
+
